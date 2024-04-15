@@ -1,0 +1,189 @@
+/* Mantén las fuentes importadas */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+
+/* Mantén los estilos del cuerpo de la página */
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.2s;
+}
+
+.container-center {
+  position: relative;
+  width: 90%; /* Utiliza el 90% del ancho del viewport */
+  max-width: 600px; /* Ancho máximo para evitar que el contenedor se vuelva demasiado ancho en pantallas grandes */
+  height: auto; /* Altura automática para adaptarse al contenido */
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: var(--primary-color);
+  box-shadow: 10px 10px 20px var(--third-color), -10px -10px 30px var(--fourth-color);
+  margin: 0 auto 15px; /* Margen superior e inferior automático para centrar verticalmente */
+}
+
+
+@media (max-width: 768px) {
+  .container-center {
+    width: 80%; /* Ajusta el ancho para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .container-center {
+    width: 90%; /* Ajusta el ancho para pantallas aún más pequeñas */
+  }
+}
+
+.brand-logo {
+  height: 150px; /* Aumenta la altura del logotipo */
+  width: 150px; /* Aumenta el ancho del logotipo */
+  margin: auto;
+  border-radius: 50%;
+  background: url('img/ibm_logo.png') center center no-repeat;
+  background-size: contain; /* Utiliza "contain" para asegurar que la imagen se ajuste dentro del tamaño del contenedor */
+  margin-top: -60px; 
+}
+
+
+/* Estilo para el título */
+.heading {
+  margin-top: -40px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #0F62FE;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+
+
+label, input, button, select {
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  color: #0F62FE;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Estilo para los elementos de entrada y etiquetas */
+.input, select {
+  background: var(--primary-color);
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px var(--third-color), inset -6px -6px 6px var(--fourth-color);
+  color: var(--secondary-color);
+  transition: color 0.2s;
+}
+
+
+
+/* Estilo para el botón */
+.button {
+  color: #ecf0f3;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: auto; /* Centra el botón horizontalmente */
+  margin-right: auto; /* Centra el botón horizontalmente */
+  background: #054ADA;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  box-shadow: 6px 6px 6px var(--third-color), -6px -6px 6px var(--fourth-color);
+  font-size: medium;
+  display: block;
+}
+
+.button:hover {
+  box-shadow: none;
+  background-color: #0f62fe;
+  transition: 0.5s;
+}
+
+#boton {
+ color: #ecf0f3;
+}
+
+
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--primary-color); /* Puedes ajustar el color de fondo según tus preferencias */
+  z-index: 100; /* Asegura que la barra de navegación esté por encima del contenido */
+  transition: background-color 0.2s
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0043ce;
+  z-index: 100; /* Asegura que el footer esté por encima del contenido */
+  padding-top: 0%;
+  padding-bottom: 0px;
+  transition: background-color 0.2s
+}
+
+
+#footer{
+  padding-right: 5%;
+  padding-top: 10px;
+  color: #cbced1;
+}
+
+
+
+:root{
+  --primary-color: #ffffff;
+  --secondary-color: #8D8D8D;
+  --third-color: #cbced1;
+  --fourth-color: #e4e4e4;
+}
+
+.dark-theme{
+ --primary-color: #121619;
+  --secondary-color: #ccccccd2;
+  --third-color: #2f2e34;
+  --fourth-color: #121619;
+  background: #121619;
+}
+
+#icon{
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
